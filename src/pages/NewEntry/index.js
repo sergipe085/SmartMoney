@@ -3,7 +3,7 @@ import { View, TextInput, Button, StyleSheet } from 'react-native'
 
 import BalanceLabel from "../../components/BalanceLabel"
 
-const NewEntry = () => {
+const NewEntry = ({navigation}) => {
     return (
         <View style={styles.container}>
             <BalanceLabel></BalanceLabel>
@@ -17,7 +17,7 @@ const NewEntry = () => {
 
             <View>
                 <Button title="Adicionar"></Button>
-                <Button title="Cancelar"></Button>
+                <Button title="Cancelar" onPress={() => navigation.goBack()}></Button>
             </View>
         </View>
     )
