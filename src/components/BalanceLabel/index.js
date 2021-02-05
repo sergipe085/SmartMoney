@@ -4,8 +4,8 @@ import { View, Text, StyleSheet } from 'react-native'
 const BalanceLabel = () => {
     return (
         <View>
-            <Text>Saldo Atual</Text>
-            <Text>$2.453,98</Text>
+            <Text style={styles.label}>Saldo Atual</Text>
+            <Text style={styles.value}>$2.453,98</Text>
         </View>
     )
 }
@@ -13,6 +13,12 @@ const BalanceLabel = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
+    },
+    label: {
+        fontSize: 12,
+    },
+    value: {
+        fontSize: 18,
     }
 });
 
